@@ -73,7 +73,7 @@ class LinearRegressionScratch:
 
              if self.ver and i%(self.epoch//10 or 1) == 0:  
                   loss = mean_squared_error(y,y_pred)
-                  print(f"Iter {i:4d} | Loss: {loss:.4f}")
+                  print(f"Iter {i:4d} | Loss: {loss:.8f}")
 
         return self 
                  
