@@ -66,7 +66,7 @@ class LinearRegressionScratch:
         X = self._add_intercept(X)        #calling the addintercept function
         m,n = X.shape    
         self.w = np.zeros(n)              #weights are defined in terms of instance so that it could be accessed by other functions calls
-             
+    
         for i in range(self.epoch):       #no of iterations to set the correct parameters for weights using batch gradient descent 
              y_pred = X.dot(self.w)       #predicted value of y by the model 
              error = y_pred - y           #error found  
@@ -95,19 +95,19 @@ class LinearRegressionScratch:
               Returns predicted values.
           """
 
-          X = self._add_intercept(X)
-          return X.dot(self.w) 
+          X = self._add_intercept(X)         #intercept is being added
+          return X.dot(self.w)               #returns the predicted value 
      
 
 X, y = make_regression(n_samples=200, n_features=3, noise=10, random_state=42)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-scaler = StandardScaler()
+scaler = StandardScaler()                    #computes the mean and standard deviation of the features
 
-X_train = scaler.fit_transform(X_train)
+X_train = scaler.fit_transform(X_train)      #updates the training features of the dataset by setting mean as 0 and variance as 1 for stability 
 
-X_test = scaler.transform(X_test)
+X_test = scaler.transform(X_test)            #
 
 model = LinearRegressionScratch(lr=0.05, n_iter=1000, verbose=True)
 
