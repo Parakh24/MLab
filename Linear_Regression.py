@@ -1,10 +1,12 @@
-import numpy as np                                              # used for vector/dot operations 
+import numpy as np  
+import matplotlib.pyplot as plt                                 # used for vector/dot operations 
 from sklearn.datasets import make_regression                    # a helper that generates a synthetic regression dataset
 from sklearn.preprocessing import StandardScaler                # imports StandardScaler, used to standardize features (0 mean , unit variance)
 from sklearn.metrics import mean_squared_error, r2_score        # imports two evaluation metrics MSE (mean squared error) and R^2 
 from sklearn.model_selection import train_test_split 
 
-# this class implements a simple linear regression using gradient descent
+
+# this class implements a simple linear regression using gradient descent 
 class LinearRegressionScratch:  
 
      def __init__(self , learning_rate = 0.01 , n_iter = 1000 , fit_intercept = True , verbose = False):
@@ -115,4 +117,8 @@ y_pred = model.predict(X_test)                                  # predicting the
 
 print("MSE:", mean_squared_error(y_test, y_pred)) 
 
-print("R²:", r2_score(y_test, y_pred)) 
+print("R²:", r2_score(y_test, y_pred))  
+
+plt.scatter(X_test[: , 0] , y_pred , color = "r" , linewidth = 2 , linestyle = ":")
+
+plt.show() 
