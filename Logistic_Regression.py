@@ -127,8 +127,8 @@ y_pred = model.predict(X_test)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 
 # ----- Visualization -----
-plt.scatter(X, y, c=y, cmap='bwr', edgecolor='k')
-plt.xlabel("Hours studied")
-plt.ylabel("Pass/Fail")
-plt.title("Logistic Regression Dataset")
-plt.show()
+plt.scatter(X, y, c=y, cmap='bwr', edgecolor='k') 
+plt.xlabel("Hours studied") 
+plt.ylabel("Pass/Fail") 
+plt.title("Logistic Regression Dataset") 
+plt.show() 
