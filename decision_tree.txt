@@ -1,0 +1,26 @@
+Pros: 
+
+Easy to interpret and visualize. 
+Handles numerical + categorical data. 
+No scaling/normalization required 
+
+Cons: 
+
+Prone to overfitting (trees can grow very deep) 
+Small changes in data can change the tree drastically. 
+Greedy splitting may not always find the optimal tree. 
+
+
+
+Decision trees are used for both classification and regression: 
+
+  1. Classification(categorical value): 
+          metrics used like: 
+              Entropy + Information Gain
+              Gini Impurity 
+
+  2. Regression(continuous values): 
+          metrics used like: 
+              Mean Squared Error(MSE)
+              Mean Absolute Error(MAE) 
+              Variance Reduction  
