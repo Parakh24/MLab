@@ -5,11 +5,12 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 
 
 #sample dataset 
-df = {
+data = {
     'Age': [25, 30, 45, 35, 40, 50, 23, 34],
     'Income': [40000, 60000, 80000, 120000, 70000, 90000, 30000, 100000],
     'Buy': ['No', 'No', 'Yes', 'Yes', 'Yes', 'Yes', 'No', 'Yes']
 } 
+df = pd.DataFrame(data , index = [1,2,3])
 
 X = df[['Age' , 'Income' , 'Buy']] 
 y = df['Buy'] 
