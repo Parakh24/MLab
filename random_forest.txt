@@ -1,0 +1,15 @@
+A random forest is an ensemble of many decision trees. 
+It improves performance using two main tricks
+
+
+1. Bootstrap Aggregation: 
+   Each tree is trained on a random subset of the data (with replacement) 
+   Prevents a single bad sample from dominating the tree
+
+2. Feature Randomness: 
+   At each split, the tree only considers a random subset of features. 
+   
+
+Final Prediction: 
+ Classification ---->> majority vote from all trees.
+ Regression ---->> average of predictions from all the trees. 
