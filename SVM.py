@@ -2,7 +2,7 @@ import numpy as np                  #used for numerical operations (not heavily 
 from sklearn import datasets        #gives acces to built-in datasets like iris, digits, etc....
 from sklearn.model_selection import train_test_split  #splits data into training and testing sets
 from sklearn.svm import SVC         #support vector classifier from sklearn.svm
-from sklearn.metrics import accuracy_score #metric to evaluate prediction accuracy 
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score #metric to evaluate prediction accuracy 
 
 
 #Load Dataset 
@@ -32,9 +32,12 @@ y_pred = clf.predict(X_test)
 
 
 #Evaluate 
-print("Accuracy:" , accuracy_score(y_test, y_pred)) 
+print("Accuracy:" , accuracy_score(y_test, y_pred))
+print("Precision_score:" , precision_score(y_test, y_pred))
+print("Recall_score:" , recall_score(y_test, y_pred)) 
+print("F1_score:" , f1_score(y_test, y_pred))  
 
-#Support vector
+#Support vector 
 print("Support Vectors:\n" , clf.support_vectors_)   
 
 
