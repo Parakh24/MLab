@@ -12,7 +12,7 @@ data = {
 } 
 df = pd.DataFrame(data , index = [1,2,3,4,5,6,7,8])
 
-X = df[['Age' , 'Income' , 'Buy']] 
+X = df[['Age' , 'Income']] 
 y = df['Buy'] 
 
 #Train_test_split 
