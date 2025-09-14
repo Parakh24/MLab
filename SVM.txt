@@ -1,0 +1,12 @@
+Linear Kernel = Simple , Linearly separable Data 
+
+
+Polynomial Kernel = Expands the feature space by adding polynomial combinations of features
+  When to use:
+     If the data in 2D is circular or follows a quadratic curve, a polynomial kernel can separate it. 
+     Works well for problems where the boundary is polynomial-shaped.
+
+RBF(Gaussian Kernel) = can create very complex, non-linear decision boundaries.
+  When to use:
+      Default choice when you don't know the data pattern
+      Handles highly non-linear problem. 
