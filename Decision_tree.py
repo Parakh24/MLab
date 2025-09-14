@@ -10,7 +10,7 @@ data = {
     'Income': [40000, 60000, 80000, 120000, 70000, 90000, 30000, 100000],
     'Buy': ['No', 'No', 'Yes', 'Yes', 'Yes', 'Yes', 'No', 'Yes']
 } 
-df = pd.DataFrame(data , index = [1,2,3])
+df = pd.DataFrame(data , index = [1,2,3,4,5,6,7,8])
 
 X = df[['Age' , 'Income' , 'Buy']] 
 y = df['Buy'] 
