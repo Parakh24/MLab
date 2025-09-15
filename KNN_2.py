@@ -6,8 +6,10 @@ from sklearn.model_selection import train_test_split
 
 #Regression
 data = {
+
 'House_size' : [20000,30000,40000,50000],
 'Price' : [100000, 150000, 300000, 450000]
+
 } 
 
 df = pd.DataFrame(data) 
