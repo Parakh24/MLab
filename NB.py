@@ -1,5 +1,5 @@
 # Iris dataset classification 
-
+# This function is used when features are classification
 import pandas as pd 
 from sklearn.datasets import load_iris                       # loads the famous iris dataset (flowers classification)
 from sklearn.model_selection import train_test_split         # splits data into training and testing sets 
