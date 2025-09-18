@@ -31,4 +31,4 @@ print('Precision_score: ' , precision_score(y_pred , y_test))
 
 print('Recall: ' , recall_score(y_pred , y_test))
 
-print('F-1_Score: ' , f1_score(y_pred , y_test)) 
+print('F-1_Score: ' , f1_score(y_pred , y_test))
