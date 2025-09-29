@@ -38,3 +38,4 @@ print("Predictions:", y_pred)
 print("Actual:", y_test.values)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
+
