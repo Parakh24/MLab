@@ -29,3 +29,4 @@ y_pred = clf.predict(X_test)
 
 # Evaluate with accuracy (correct predictions / total predictions)
 print("Accuracy:", accuracy_score(y_test, y_pred)) 
+ 
