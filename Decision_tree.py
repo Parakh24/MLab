@@ -33,3 +33,4 @@ print("Actual: " , y_test.values)
 plt.figure(figsize=(10,6)) 
 plot_tree(clf, feature_names=['Age', 'Income'], class_names=['No' , 'Yes'], filled=True) 
 plt.show() 
+
