@@ -97,7 +97,7 @@ class LinearRegressionScratch:
 
           X = self._add_intercept(X)                             # intercept is being added
           return X.dot(self.w)                                   # returns the predicted value 
-     
+             
 
 X, y = make_regression(n_samples=200, n_features=3, noise=10, random_state=42)
 
