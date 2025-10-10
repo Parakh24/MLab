@@ -7,14 +7,21 @@ No scaling/normalization required
 Cons: 
 
 Prone to overfitting (trees can grow very deep) 
-Small changes in data can change the tree drastically. 
-Greedy splitting may not always find the optimal tree. 
+
+Small changes in data can change the tree drastically because it greedily picks the best feature & 
+threshold at each node based only on the current subset of data.
+
+Changing one value can change which split is "best" at the root.
+
+Since all subsequent splits depend on the previous splits, the entire tree structure may change.
+
+Greedy splitting may not always find the optimal tree.
 
 
 
 Decision trees are used for both classification and regression: 
 
-  1. Classification(categorical value): 
+  1. Classification(discrete value): 
           metrics used like: 
               Entropy + Information Gain
               Gini Impurity 
