@@ -34,3 +34,9 @@ plt.figure(figsize=(10,6))
 plot_tree(clf, feature_names=['Age', 'Income'], class_names=['No' , 'Yes'], filled=True) 
 plt.show() 
 
+
+#the picture shows the root noded based on the Gini Impurity,
+#first node is of gini impurity which has some impurities in terms of yes and no 
+#contains some samples on the basis of train_test_split which i have provided 
+#class is "Yes"                         
+
