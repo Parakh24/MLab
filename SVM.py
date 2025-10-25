@@ -5,13 +5,12 @@ from sklearn.svm import SVC                                          # support v
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score   # metrics to evaluate model performance
 
 # Load Dataset 
-iris = datasets.load_iris()                                          # load iris dataset
-X = iris.data[:100, :]                                               # take the first 100 samples (only two classes: Setosa=0 , Versicolor=1)
+iris = datasets.load_iris()                                          # load iris dataset 
+X = iris.data[:100, :]                                               # take the first 100 samples (only two classes: Setosa=0 , Versicolor=1) 
 y = iris.target[:100]                                                # labels for these samples  
 
 # Split data 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
 # kernel='linear' → tells SVM to make a linear decision boundary between two classes
 # C = regularization parameter
 #   - Higher C → tries harder to classify all training points correctly (risk of overfitting)
