@@ -38,5 +38,6 @@ plt.show()
 #the picture shows the root noded based on the Gini Impurity,
 #first node is of gini impurity which has some impurities in terms of yes and no 
 #contains some samples on the basis of train_test_split which i have provided 
-#class is "Yes"                         
+#class is "Yes"  sincce majority is yes 
+                       
 
