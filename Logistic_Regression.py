@@ -25,7 +25,8 @@ model.fit(X_train,y_train)
 
 #Prediction  
 y_pred = model.predict(X_test) 
-print("Intercept: " , )
+print("Intercept: " , model.intercept_)
+print("Coefficient: " , model.coef_)  
 
 
 #Evaluation 
